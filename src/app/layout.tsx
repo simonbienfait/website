@@ -15,12 +15,12 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Bienfait — L'agence no-code des organisations ambitieuses",
+  title: "Bienfait — L'équipe tech des PME",
   description:
-    "Notre agence no-code vous accompagne dans la création d'outils sur mesure. +150 projets no-code accompagnés depuis 3 ans.",
+    "Nous construisons et intégrons les outils internes des PME. Sur-mesure, sans compromis. +150 projets livrés depuis 3 ans.",
   openGraph: {
-    title: "Bienfait — L'agence no-code des organisations ambitieuses",
-    description: "Notre agence no-code vous accompagne dans la création d'outils sur mesure.",
+    title: "Bienfait — L'équipe tech des PME",
+    description: "Nous construisons et intégrons les outils internes des PME.",
     url: "https://bienfait.co",
     siteName: "Bienfait",
     locale: "fr_FR",

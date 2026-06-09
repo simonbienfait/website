@@ -26,10 +26,10 @@ export default function Footer() {
           <div className="md:col-span-2">
             <p className="font-bold text-xl mb-2">Bienfait</p>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-              L&apos;agence no-code des organisations ambitieuses.
+              L&apos;équipe tech des PME.
             </p>
             <p className="text-gray-400 text-sm mt-4">
-              +150 projets no-code accompagnés depuis 3 ans
+              +150 projets livrés depuis 3 ans
             </p>
             <div className="flex gap-4 mt-6">
               {["LinkedIn", "X", "Instagram", "YouTube"].map((s) => (
