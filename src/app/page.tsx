@@ -131,16 +131,16 @@ export default function Home() {
       {/* Hero */}
       <section className="bg-white py-28 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight mb-6 tracking-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-[#0C1A66] leading-tight mb-6 tracking-tight">
             L&apos;agence no-code des organisations ambitieuses
           </h1>
-          <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto mb-10">
-            Notre agence no-code <strong className="text-gray-900">vous</strong> accompagne dans la création d&apos;<strong className="text-gray-900">outils sur mesure</strong> pour améliorer l&apos;<strong className="text-gray-900">efficacité opérationnelle</strong> de vos équipes.
+          <p className="text-lg md:text-xl text-[#0C1A66]/60 max-w-2xl mx-auto mb-10">
+            Notre agence no-code <strong className="text-[#0C1A66]">vous</strong> accompagne dans la création d&apos;<strong className="text-[#0C1A66]">outils sur mesure</strong> pour améliorer l&apos;<strong className="text-[#0C1A66]">efficacité opérationnelle</strong> de vos équipes.
           </p>
-          <Button href="/contact" size="lg" className="bg-gray-900 text-white hover:bg-gray-700 rounded-full">
+          <Button href="/contact" size="lg" className="bg-[#0C1A66] text-white hover:bg-[#162580] rounded-full">
             Réserver un appel de découverte
           </Button>
-          <p className="text-sm text-gray-400 mt-6">
+          <p className="text-sm text-[#0C1A66]/40 mt-6">
             +150 projets no-code accompagnés depuis 3 ans
           </p>
         </div>
@@ -150,7 +150,7 @@ export default function Home() {
       <section className="border-y border-gray-100 py-8 overflow-hidden bg-white">
         <div className="max-w-6xl mx-auto px-4 flex flex-wrap justify-center gap-x-12 gap-y-3">
           {clients.map((c) => (
-            <span key={c} className="text-sm font-semibold text-gray-300 uppercase tracking-wider">
+            <span key={c} className="text-sm font-semibold text-[#0C1A66]/30 uppercase tracking-wider">
               {c}
             </span>
           ))}
@@ -161,14 +161,14 @@ export default function Home() {
       <section className="py-24 px-4">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">Notre agence no-code</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+            <p className="text-xs font-semibold uppercase tracking-wider text-[#0C1A66]/40 mb-4">Notre agence no-code</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0C1A66] mb-6 leading-tight">
               Vous aussi vous rangez des carrés dans les ronds ?
             </h2>
-            <p className="text-gray-500 leading-relaxed mb-4">
+            <p className="text-[#0C1A66]/60 leading-relaxed mb-4">
               Vos outils ne correspondent jamais parfaitement à vos processus. Vous passez votre temps à adapter votre façon de travailler à des logiciels génériques qui ne vous ressemblent pas.
             </p>
-            <p className="text-gray-500 leading-relaxed mb-8">
+            <p className="text-[#0C1A66]/60 leading-relaxed mb-8">
               Notre agence no-code crée des solutions sur mesure qui s&apos;adaptent à votre façon de travailler — pas l&apos;inverse. On vous libère du temps pour vous concentrer sur ce qui compte vraiment.
             </p>
             <Button href="/notre-offre" variant="outline">
@@ -176,8 +176,8 @@ export default function Home() {
             </Button>
           </div>
           {/* Illustration placeholder */}
-          <div className="bg-gray-50 rounded-3xl aspect-square flex items-center justify-center">
-            <div className="text-center text-gray-300">
+          <div className="bg-[#f8f7ff] rounded-3xl aspect-square flex items-center justify-center">
+            <div className="text-center text-[#0C1A66]/30">
               <div className="text-6xl mb-3">🧩</div>
               <p className="text-sm">Illustration</p>
             </div>
@@ -186,13 +186,13 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section className="bg-gray-50 py-24 px-4">
+      <section className="bg-[#f8f7ff] py-24 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {services.map((s) => (
               <div key={s.title} className="bg-white rounded-2xl p-8 shadow-sm">
-                <h3 className="font-bold text-gray-900 mb-3 text-lg">{s.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{s.description}</p>
+                <h3 className="font-bold text-[#0C1A66] mb-3 text-lg">{s.title}</h3>
+                <p className="text-[#0C1A66]/60 text-sm leading-relaxed">{s.description}</p>
               </div>
             ))}
           </div>
@@ -202,15 +202,15 @@ export default function Home() {
       {/* Use cases */}
       <section className="py-24 px-4">
         <div className="max-w-6xl mx-auto">
-          <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3 text-center">Concrètement</p>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+          <p className="text-xs font-semibold uppercase tracking-wider text-[#0C1A66]/40 mb-3 text-center">Concrètement</p>
+          <h2 className="text-3xl font-bold text-[#0C1A66] mb-4 text-center">
             Ce que nous pouvons faire ensemble.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 mb-10">
             {useCases.map((u) => (
-              <div key={u.title} className="border border-gray-200 rounded-2xl p-6 hover:border-gray-900 transition-colors">
-                <h3 className="font-semibold text-gray-900 mb-2">{u.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{u.description}</p>
+              <div key={u.title} className="border border-gray-200 rounded-2xl p-6 hover:border-[#0C1A66] transition-colors">
+                <h3 className="font-semibold text-[#0C1A66] mb-2">{u.title}</h3>
+                <p className="text-[#0C1A66]/60 text-sm leading-relaxed">{u.description}</p>
               </div>
             ))}
           </div>
@@ -223,12 +223,12 @@ export default function Home() {
       </section>
 
       {/* Tools */}
-      <section className="bg-[#f0ebff] py-24 px-4">
+      <section className="bg-[#E9D7FE]/40 py-24 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-between mb-10">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">No-code</p>
-              <h2 className="text-2xl font-bold text-gray-900">
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#0C1A66]/40 mb-2">No-code</p>
+              <h2 className="text-2xl font-bold text-[#0C1A66]">
                 Notre sélection d&apos;outils no-code et low-code
               </h2>
             </div>
@@ -239,15 +239,15 @@ export default function Home() {
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
             {tools.map((t) => (
               <div key={t.name} className="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-                <p className="text-sm font-medium text-gray-800">{t.name}</p>
-                {t.badge === "partner" && <span className="text-xs text-[#6749cf] mt-1 block">★ partenaire</span>}
-                {t.badge === "certified" && <span className="text-xs text-[#f97316] mt-1 block">★ certifié</span>}
+                <p className="text-sm font-medium text-[#0C1A66]">{t.name}</p>
+                {t.badge === "partner" && <span className="text-xs text-[#6941C6] mt-1 block">★ partenaire</span>}
+                {t.badge === "certified" && <span className="text-xs text-[#23CD8E] mt-1 block">★ certifié</span>}
               </div>
             ))}
           </div>
-          <div className="flex gap-6 mt-6 text-xs text-gray-500">
-            <span><span className="text-[#6749cf]">★</span> Outils partenaires</span>
-            <span><span className="text-[#f97316]">★</span> Outils favoris et certifiés</span>
+          <div className="flex gap-6 mt-6 text-xs text-[#0C1A66]/60">
+            <span><span className="text-[#6941C6]">★</span> Outils partenaires</span>
+            <span><span className="text-[#23CD8E]">★</span> Outils favoris et certifiés</span>
           </div>
         </div>
       </section>
@@ -257,8 +257,8 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-between mb-10">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Intégrations</p>
-              <h2 className="text-2xl font-bold text-gray-900">
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#0C1A66]/40 mb-2">Intégrations</p>
+              <h2 className="text-2xl font-bold text-[#0C1A66]">
                 Intégrations API que nous maîtrisons
               </h2>
             </div>
@@ -270,7 +270,7 @@ export default function Home() {
             {integrations.map((i) => (
               <span
                 key={i}
-                className="border border-gray-200 rounded-full px-4 py-2 text-sm text-gray-600 hover:border-gray-900 hover:text-gray-900 transition-colors cursor-default"
+                className="border border-gray-200 rounded-full px-4 py-2 text-sm text-[#0C1A66]/60 hover:border-[#0C1A66] hover:text-[#0C1A66] transition-colors cursor-default"
               >
                 {i}
               </span>
@@ -280,12 +280,12 @@ export default function Home() {
       </section>
 
       {/* Blog */}
-      <section className="bg-gray-50 py-24 px-4">
+      <section className="bg-[#f8f7ff] py-24 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-between mb-10">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Blog</p>
-              <h2 className="text-2xl font-bold text-gray-900">
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#0C1A66]/40 mb-2">Blog</p>
+              <h2 className="text-2xl font-bold text-[#0C1A66]">
                 Nos connaissances de l&apos;univers no-code
               </h2>
             </div>
@@ -296,13 +296,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {articles.map((a) => (
               <div key={a.title} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <div className="bg-gray-100 aspect-video" />
+                <div className="bg-[#E9D7FE]/30 aspect-video" />
                 <div className="p-6">
-                  <span className="text-xs font-medium text-[#6749cf] bg-[#ede9ff] px-2 py-1 rounded-full">
+                  <span className="text-xs font-medium text-[#6941C6] bg-[#E9D7FE] px-2 py-1 rounded-full">
                     {a.category}
                   </span>
-                  <h3 className="font-semibold text-gray-900 mt-3 mb-2 leading-snug">{a.title}</h3>
-                  <p className="text-xs text-gray-400">{a.time} de lecture</p>
+                  <h3 className="font-semibold text-[#0C1A66] mt-3 mb-2 leading-snug">{a.title}</h3>
+                  <p className="text-xs text-[#0C1A66]/40">{a.time} de lecture</p>
                 </div>
               </div>
             ))}
@@ -311,10 +311,10 @@ export default function Home() {
       </section>
 
       {/* Ticker banner */}
-      <div className="bg-[#4ade80] py-4 overflow-hidden">
+      <div className="bg-[#23CD8E] py-4 overflow-hidden">
         <div className="flex gap-16 animate-none whitespace-nowrap">
           {Array.from({ length: 4 }).map((_, i) => (
-            <span key={i} className="text-sm font-semibold text-gray-900 shrink-0">
+            <span key={i} className="text-sm font-semibold text-[#0C1A66] shrink-0">
               {tickerText} &nbsp;&nbsp;—
             </span>
           ))}
@@ -325,34 +325,34 @@ export default function Home() {
       <section className="py-24 px-4">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0C1A66] mb-4 leading-tight">
               Prêt à passer au no-code ?
             </h2>
-            <p className="text-gray-500 mb-8 leading-relaxed">
+            <p className="text-[#0C1A66]/60 mb-8 leading-relaxed">
               Rejoignez les 150 organisations qui ont déjà fait confiance à Bienfait pour transformer leur façon de travailler.
             </p>
-            <Button href="/contact" size="lg" className="bg-gray-900 text-white hover:bg-gray-700 rounded-full">
+            <Button href="/contact" size="lg" className="bg-[#0C1A66] text-white hover:bg-[#162580] rounded-full">
               Réserver un appel de découverte
             </Button>
           </div>
-          <div className="bg-gray-100 rounded-3xl aspect-video" />
+          <div className="bg-[#E9D7FE]/30 rounded-3xl aspect-video" />
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="bg-gray-50 py-24 px-4">
+      <section className="bg-[#f8f7ff] py-24 px-4">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-3xl font-bold text-[#0C1A66] mb-12 text-center">
             Vos questions.
           </h2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <details key={f.q} className="bg-white rounded-2xl px-6 py-5 group">
-                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between">
+                <summary className="font-semibold text-[#0C1A66] cursor-pointer list-none flex items-center justify-between">
                   {f.q}
-                  <span className="text-gray-400 group-open:rotate-45 transition-transform text-xl ml-4 shrink-0">+</span>
+                  <span className="text-[#0C1A66]/40 group-open:rotate-45 transition-transform text-xl ml-4 shrink-0">+</span>
                 </summary>
-                <p className="text-gray-500 text-sm leading-relaxed mt-4">{f.a}</p>
+                <p className="text-[#0C1A66]/60 text-sm leading-relaxed mt-4">{f.a}</p>
               </details>
             ))}
           </div>

@@ -11,9 +11,9 @@ interface ButtonProps {
 }
 
 const variants = {
-  primary: "bg-[#6749cf] text-white hover:bg-[#4a30a8]",
-  secondary: "bg-[#f97316] text-white hover:bg-orange-600",
-  outline: "border border-[#6749cf] text-[#6749cf] hover:bg-[#ede9ff]",
+  primary: "bg-[#23CD8E] text-[#0C1A66] hover:bg-[#1db87d]",
+  secondary: "bg-[#0C1A66] text-white hover:bg-[#162580]",
+  outline: "border border-[#0C1A66] text-[#0C1A66] hover:bg-[#E9D7FE]",
 };
 
 const sizes = {
@@ -30,7 +30,7 @@ export default function Button({
   size = "md",
   className = "",
 }: ButtonProps) {
-  const classes = `inline-flex items-center justify-center rounded-full font-medium transition-colors ${variants[variant]} ${sizes[size]} ${className}`;
+  const classes = `inline-flex items-center justify-center rounded-full font-semibold transition-colors ${variants[variant]} ${sizes[size]} ${className}`;
 
   if (href) {
     return <Link href={href} className={classes}>{children}</Link>;
